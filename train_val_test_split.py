@@ -12,8 +12,8 @@ def repeat(begin, finish, fileExtension):
         totalList.append("frame_" + "".join(newList) + str(i) + fileExtension) # fileExtension => .jpg or .txt
     return totalList
 def move(imagesOrLabels, trainOrValOrTest, trainOrValOrTestFiles):
-    FOLDER_PATH = f"/home/eliftosun/Downloads/Teknofest UYZ 2021 Etiketli Veriler/{imagesOrLabels}"
-    DESTINATION_PATH = f"/home/eliftosun/Downloads/Teknofest UYZ 2021 Etiketli Veriler/{trainOrValOrTest}/{imagesOrLabels}"
+    FOLDER_PATH = f"../Teknofest UYZ 2021 Etiketli Veriler/{imagesOrLabels}"
+    DESTINATION_PATH = f"../Teknofest UYZ 2021 Etiketli Veriler/{trainOrValOrTest}/{imagesOrLabels}"
     os.mkdir(DESTINATION_PATH) # train, val, test icin ayri ayri
     # print(len(os.listdir(DESTINATION_PATH)))
     # print(len(os.listdir(FOLDER_PATH))*0.3) # TRAIN = 2520, VAL = 540, TEST = 540
