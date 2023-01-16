@@ -1,8 +1,9 @@
 import os
 from pathlib import Path
 
+# train-val-test split for example datas send by teknofest
 
-def repeat(begin, finish, fileExtension):
+def repeat(begin, finish, fileExtension): 
     totalList = []
     for i in range(begin, finish, 4):
         newList = []
