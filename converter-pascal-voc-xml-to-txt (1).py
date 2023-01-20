@@ -45,7 +45,7 @@ for xmlName in os.listdir(LABEL_FOLDER):
             newXmlPath = DESTINATION_SOURCE+"/"+fileName+"txt"
             print(f"{label_name}\t{center_x}\t{center_y}\t{width}\t{height}\n")
             with open(newXmlPath, "a") as file:
-                file.write(f"{label_name}\t{center_x}\t{center_y}\t{width}\t{height}\n")
+                file.write(f"{label_name} {center_x} {center_y} {width} {height}\n")
     else:
         print(xmlName)
         imageName = "".join(re.findall(regex, xmlName))
